@@ -1,5 +1,5 @@
-import Plus from "./components/assets/plus";
-import Layout from "./layout";
+import Plus from "../components/assets/plus";
+import Layout from "../layouts/layout";
 
 export default function HomeView() {
   return (
@@ -21,7 +21,7 @@ export default function HomeView() {
       <br />
       <button id="save-btn" class="btn save-btn">
         <Plus />
-        Create Your Paste
+        Add To Stash
       </button>
       <script src="/js/script.js"></script>
     </Layout>

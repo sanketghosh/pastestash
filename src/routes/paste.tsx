@@ -2,7 +2,7 @@ import { Hono } from "hono";
 import { jsxRenderer } from "hono/jsx-renderer";
 import { prisma } from "../lib/prisma";
 import { nanoid } from "nanoid";
-import PasteView from "../views/paste-view";
+import PasteView from "../views/pages/paste-view";
 
 const pasteRouter = new Hono();
 

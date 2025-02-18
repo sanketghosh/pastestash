@@ -1,4 +1,4 @@
-import Layout from "./layout";
+import Layout from "../layouts/layout";
 
 export default function PasteView({ content }: { content: string }) {
   return (

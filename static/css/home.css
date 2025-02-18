@@ -2,17 +2,18 @@
   font-family: var(--instrument-sans);
   width: 100%;
   padding: 8px;
-  border: 1px solid var(--bg-slate-300);
-  background-color: var(--bg-slate-50);
-  border-radius: 4px;
+  border: 2px solid var(--slate-700);
+  background-color: var(--slate-800);
+  border-radius: 6px;
   outline: none;
   height: 700px;
   margin-top: 12px;
+  color: var(--slate-50);
 }
 
 .paste-area:focus {
   outline: none;
-  outline: 1px solid var(--bg-slate-500);
+  border: 2px solid var(--blue-700);
 }
 
 .save-btn {

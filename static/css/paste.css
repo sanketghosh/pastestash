@@ -2,8 +2,8 @@ pre {
   font-family: var(--instrument-sans);
   width: 100%;
   padding: 16px 12px;
-  border: 1px solid var(--bg-slate-300);
-  background-color: var(--bg-slate-200);
+  border: 1px solid var(--slate-700);
+  background-color: var(--slate-800);
   border-radius: 4px;
   height: fit-content;
   margin-top: 12px;
