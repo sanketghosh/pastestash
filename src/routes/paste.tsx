@@ -21,12 +21,12 @@ pasteRouter.post("/", async (c) => {
   const paste = await prisma.bin.create({
     data: {
       content: content,
-      shortId: nanoid(),
+      shortId: nanoid(6), // will generate a short id of 6 characters
     },
   });
 
   return c.json({
-    url: `/paste/${paste.shortId}`,
+    url: `/${paste.shortId}`,
   });
 });
 

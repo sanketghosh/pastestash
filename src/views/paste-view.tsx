@@ -1,24 +1,21 @@
-const PasteView = ({ content }: { content: string }) => {
-  return (
-    <html>
-      <head>
-        <title>PasteStash - Pasted stuff</title>
-        <style>
-          {`
-          body { font-family: sans-serif; padding: 20px; }
-          pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }
-          `}
-        </style>
-      </head>
-      <body>
-        <h1>Your Paste</h1>
-        <pre>{content}</pre>
-        <p>
-          <a href="/">Create a new paste</a>
-        </p>
-      </body>
-    </html>
-  );
-};
+import Layout from "./layout";
 
-export default PasteView;
+export default function PasteView({ content }: { content: string }) {
+  return (
+    <Layout
+      cssFile="/css/paste.css"
+      pageTitle="Here's your paster"
+      pageDescription="Check your paste here, or you can create a new."
+    >
+      <header class="header">
+        <h1>Your Paste</h1>
+      </header>
+      <pre>{content}</pre>
+      <p>
+        <a href="/" class="btn">
+          Create a new paste
+        </a>
+      </p>
+    </Layout>
+  );
+}
